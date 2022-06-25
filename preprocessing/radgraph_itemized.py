@@ -7,10 +7,10 @@ import nltk
 
 parser = argparse.ArgumentParser(description='Itemize RadGraph Dataset.')
 
-parser.add_argument('--data-path', default='/ocean/projects/asc170022p/yuke/Downloads/RadGraph/physionet.org/files/radgraph/1.0.0/MIMIC-CXR_graphs.json',
+parser.add_argument('--data-path', default='/PATH TO RADGRAPH DATA/RadGraph/physionet.org/files/radgraph/1.0.0/MIMIC-CXR_graphs.json',
                     help='RadGraph data path.'
                     )
-parser.add_argument('--output-path', default='/ocean/projects/asc170022p/yuke/PythonProject/AGXNet/preprocessing/mimic-cxr-radgraph-itemized.csv',
+parser.add_argument('--output-path', default='/PROJECT DIR/preprocessing/mimic-cxr-radgraph-itemized.csv',
                     help='Output path for itemized RadGraph data.')
 
 

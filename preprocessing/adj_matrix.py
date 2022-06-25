@@ -11,7 +11,7 @@ from torch.utils.data import Dataset, DataLoader
 
 parser = argparse.ArgumentParser(description='Create Adjacency matrix Matrix.')
 
-parser.add_argument('--input-path', default='/ocean/projects/asc170022p/yuke/PythonProject/AGXNet/preprocessing/mimic-cxr-radgraph-sentence-parsed.csv',
+parser.add_argument('--input-path', default='/PROJECT DIR/preprocessing/mimic-cxr-radgraph-sentence-parsed.csv',
                     help='Itemized input data path.'
                     )
 

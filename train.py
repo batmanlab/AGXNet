@@ -33,16 +33,16 @@ from utils import Bunch, keep_dicom_idx_in_batch
 parser = argparse.ArgumentParser(description='AGXNet Training on MIMIC-CXR dataset.')
 
 # Experiment
-parser.add_argument('--exp-dir', metavar='DIR', default='/ocean/projects/asc170022p/yuke/PythonProject/AGXNet/exp/test_001', help='experiment path')
+parser.add_argument('--exp-dir', metavar='DIR', default='/PROJECT DIR/EXPERIMENT DIR/EXPERIMENT NAME', help='experiment path')
 
 # Dataset
-parser.add_argument('--img-chexpert-file', metavar='PATH', default='/ocean/projects/asc170022p/yuke/PythonProject/AGXNet/data/mimic-cxr-chexpert.csv',
+parser.add_argument('--img-chexpert-file', metavar='PATH', default='/PROJECT DIR/data/mimic-cxr-chexpert.csv',
                     help='master table including the image path and chexpert labels.')
-parser.add_argument('--radgraph-sids-npy-file', metavar='PATH', default='/ocean/projects/asc170022p/yuke/PythonProject/AGXNet/preprocessing/landmark_observation_sids.npy',
+parser.add_argument('--radgraph-sids-npy-file', metavar='PATH', default='/PROJECT DIR/preprocessing/landmark_observation_sids.npy',
                     help='radgraph study ids.')
-parser.add_argument('--radgraph-adj-mtx-npy-file', metavar='PATH', default='/ocean/projects/asc170022p/yuke/PythonProject/AGXNet/preprocessing/landmark_observation_adj_mtx.npy',
+parser.add_argument('--radgraph-adj-mtx-npy-file', metavar='PATH', default='/PROJECT DIR/preprocessing/landmark_observation_adj_mtx.npy',
                     help='radgraph adjacent matrix landmark - observation.')
-parser.add_argument('--nvidia-bounding-box-file', metavar='PATH', default='/ocean/projects/asc170022p/yuke/PythonProject/AGXNet/data/mimic-cxr-annotation.csv',
+parser.add_argument('--nvidia-bounding-box-file', metavar='PATH', default='/PROJECT DIR/data/mimic-cxr-annotation.csv',
                     help='bounding boxes annotated for pneumonia and pneumothorax.')
 parser.add_argument('--chexpert-names', nargs='+', default=['Atelectasis', 'Cardiomegaly', 'Consolidation', 'Edema',
 'Enlarged Cardiomediastinum', 'Fracture', 'Lung Lesion', 'Lung Opacity', 'No Finding', 'Pleural Effusion',

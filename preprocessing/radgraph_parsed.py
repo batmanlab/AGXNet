@@ -6,10 +6,10 @@ sp = spacy.load('en_core_web_sm')
 
 parser = argparse.ArgumentParser(description='Pharse RadGraph Relations.')
 
-parser.add_argument('--input-path', default='/ocean/projects/asc170022p/yuke/PythonProject/AGXNet/preprocessing/mimic-cxr-radgraph-itemized.csv',
+parser.add_argument('--input-path', default='/PROJECT DIR/preprocessing/mimic-cxr-radgraph-itemized.csv',
                     help='Itemized input data path.'
                     )
-parser.add_argument('--output-path', default='/ocean/projects/asc170022p/yuke/PythonProject/MIMIC-CXR-SSL/preprocessing/mimic-cxr-radgraph-sentence-parsed.csv',
+parser.add_argument('--output-path', default='/PROJECT DIR/preprocessing/mimic-cxr-radgraph-sentence-parsed.csv',
                     help='Output path for parsed relations.')
 
 
