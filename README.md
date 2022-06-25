@@ -13,5 +13,11 @@ Creating a large-scale dataset of abnormality annotation on medical images is a 
 
 ### Data Requirements and Download Links
 - [MIMIC-CXR](https://physionet.org/content/mimic-cxr-jpg/2.0.0/)
-- [RadGraph](https://anaconda.org/SimpleITK/simpleitk](https://physionet.org/content/radgraph/1.0.0/)
+- [RadGraph](https://physionet.org/content/radgraph/1.0.0/)
 - [NVIDIA Annotation](https://github.com/leotam/MIMIC-CXR-annotations)
+- [Chest ImaGenome](https://physionet.org/content/chest-imagenome/1.0.0/)
+
+### Data Preprocessing
+1. Run ./preprocessing/radgraph_itemized.py to generate itemized RadGraph examples (saved to mimic-cxr-radgraph-itemized.csv)
+2. Run ./preprocessing/radgraph_parsed.py to parse RadGraph relations (saved to mimic-cxr-radgraph-sentence-parsed.csv)
+3. Run ./preprocessing/adj_matrix.py to create adjacency matrix that represents the relations between anatomical landmarks and observations mentioned in radiology reports. 
