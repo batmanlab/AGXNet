@@ -18,6 +18,6 @@ Creating a large-scale dataset of abnormality annotation on medical images is a 
 - [Chest ImaGenome](https://physionet.org/content/chest-imagenome/1.0.0/)
 
 ### Data Preprocessing
-1. Run ./preprocessing/radgraph_itemized.py to generate itemized RadGraph examples (saved to mimic-cxr-radgraph-itemized.csv)
-2. Run ./preprocessing/radgraph_parsed.py to parse RadGraph relations (saved to mimic-cxr-radgraph-sentence-parsed.csv)
+1. Run ./preprocessing/radgraph_itemized.py to generate itemized RadGraph examples.
+2. Run ./preprocessing/radgraph_parsed.py to parse RadGraph relations.
 3. Run ./preprocessing/adj_matrix.py to create adjacency matrix that represents the relations between anatomical landmarks and observations mentioned in radiology reports. 
